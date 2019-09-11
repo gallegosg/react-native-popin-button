@@ -1,6 +1,6 @@
 {
   "name": "react-native-popin-button",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Button for React Native that pops-in/shrinks when you press it",
   "main": "index.js",
   "scripts": {
