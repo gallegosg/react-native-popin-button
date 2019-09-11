@@ -9,28 +9,39 @@ $ npm i react-native-popin-button --save
 
 ### Example
 
+![](https://i.imgur.com/bB3BQk7.gif)
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 import { Text, View } from 'react-native'
-
 import PopinButton from 'react-native-popin-button'
 
-export default class App extends Component {
-	handlePress = () => {
-		alert('woohoo')
-	}
-
-  render() {
-    return (
-      <View>
-	      <PopinButton onPress={this.handlePress} shrinkTo={0.8} style={backgroundColor: 'red'}]}>
-			<Text  style={{ color: '#fff' }]}>BEGIN</Text>
-		  </PopinButton>
-      </View>
-    )
+const styles = {
+  container: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    flex: 1
+  },
+  button: {
+    backgroundColor: 'lightblue',
+    padding: 30,
+    borderRadius: 20
+  },
+  text: {
+    color: '#fff',
+    fontSize: 24
   }
 }
+const App = () => {
+  return (
+    <View style={styles.container}>
+      <PopinButton onPress={() => alert('woohoo')} shrinkTo={0.8} style={styles.button}>
+			  <Text style={styles.text}>Woohoo</Text>
+      </PopinButton>
+    </View>
+  );
+};
+export default App;
 ```
 
 #### Properties

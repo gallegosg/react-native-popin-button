@@ -27,11 +27,11 @@
     "prop-types": "^15.7.2"
   },
   "bugs": {
-    "url": "https://github.com/colbymillerdev/react-native-progress-steps/issues"
+    "url": "https://github.com/gallegosg/react-native-popin-button/issues"
   },
-  "homepage": "https://github.com/colbymillerdev/react-native-progress-steps#readme",
+  "homepage": "https://github.com/gallegosg/react-native-popin-button#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/colbymillerdev/react-native-progress-steps.git"
+    "url": "git+https://github.com/gallegosg/react-native-popin-button.git"
   }
 }
