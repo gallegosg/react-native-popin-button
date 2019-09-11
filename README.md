@@ -11,7 +11,7 @@ $ npm i react-native-popin-button --save
 
 ### Demo
 
-![](https://i.imgur.com/bB3BQk7l.gif)
+![](https://i.imgur.com/bB3BQk7.gif)
 
 ### Example
 
