@@ -1,5 +1,7 @@
 ## react-native-popin-button
 
+Button for React Native that pops-in/shrinks when you press it
+
 ### Installation
 
 ```bash
@@ -7,9 +9,11 @@ $ npm i react-native-popin-button --save
 ```
 
 
-### Example
+### Demo
 
 ![](https://i.imgur.com/bB3BQk7l.gif)
+
+### Example
 
 ```jsx
 import React from 'react'
@@ -53,3 +57,7 @@ export default App;
 | style          |        N/A        | `object`/`array` | Style of the button                                                                              |
 | useNativeDriver   |      true      |  `bool`  | Use Native Driver for animation                                                               |
 | afterAnimate       |      true      |  `bool`  | `True` will trigger button after animation `False` will trigger function on press out                                                                       |
+
+## License
+
+[MIT](LICENSE)
