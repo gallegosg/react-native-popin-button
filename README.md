@@ -9,7 +9,7 @@ $ npm i react-native-popin-button --save
 
 ### Example
 
-![](https://i.imgur.com/bB3BQk7.gif)
+![](https://i.imgur.com/bB3BQk7l.gif)
 
 ```jsx
 import React from 'react'
@@ -36,7 +36,7 @@ const App = () => {
   return (
     <View style={styles.container}>
       <PopinButton onPress={() => alert('woohoo')} shrinkTo={0.8} style={styles.button}>
-			  <Text style={styles.text}>Woohoo</Text>
+        <Text style={styles.text}>Woohoo</Text>
       </PopinButton>
     </View>
   );
