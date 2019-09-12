@@ -4,18 +4,18 @@ import { Animated, TouchableWithoutFeedback } from 'react-native';
 
 export default class PopinButton extends Component {
   componentWillMount = () => {
-    this.animatedValue = new Animated.Value(1);
+    this.animatedScale = new Animated.Value(1);
   }
 
   handlePressIn = () => {
-    Animated.spring(this.animatedValue, {
-      toValue: this.props.shrinkTo
+    Animated.spring(this.animatedScale, {
+      toValue: this.props.scaleTo
     }).start()
   }
 
   handlePressOut = () => {
     if(this.props.afterAnimate){
-      Animated.spring(this.animatedValue, {
+      Animated.spring(this.animatedScale, {
         toValue: 1,
         tension: 50,
         friction: 10
@@ -23,7 +23,7 @@ export default class PopinButton extends Component {
         this.props.onPress()
       });
     } else {
-      Animated.spring(this.animatedValue, {
+      Animated.spring(this.animatedScale, {
         toValue: 1,
         tension: 50,
         friction: 10
@@ -33,7 +33,7 @@ export default class PopinButton extends Component {
   }
   
   render() {
-    const animatedStyles = { transform: [{scale: this.animatedValue }]};
+    const animatedStyles = { transform: [{scale: this.animatedScale }]};
     return (
       <TouchableWithoutFeedback
         onPressIn={this.handlePressIn}
@@ -50,13 +50,13 @@ export default class PopinButton extends Component {
 
 PopinButton.propTypes = {
   onPress: PropTypes.func.isRequired,
-  shrinkTo: PropTypes.number,
+  scaleTo: PropTypes.number,
   afterAnimate: PropTypes.bool,
   useNativeDriver: PropTypes.bool,
 }
 
 PopinButton.defaultProps = {
-  shrinkTo: 0.9,
+  scaleTo: 0.9,
   afterAnimate: true,
   useNativeDriver: true
 }
